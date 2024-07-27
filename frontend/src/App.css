@@ -1,0 +1,23 @@
+
+body{
+    user-select: none;
+    scroll-behavior: smooth;
+}
+.spline{
+    width: 100px;
+    
+}
+.list::-webkit-scrollbar{
+    width: 2px;
+    height: 3px;
+    
+
+}
+.list::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+a.active{
+    background-color:#4B70F5;
+    
+}
+ 

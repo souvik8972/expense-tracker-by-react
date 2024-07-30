@@ -44,12 +44,12 @@ const ExpenseTable = ({ transactions, limit }) => {
       {displayedTransactions.map((item, index) => (
         <div
           key={index}
-          className={`grid grid-cols-12 text-start gap-4 ease-in-out delay-[0.2s] mb-1 border bg-white rounded-lg pr-2 text-metal hover:bg-metal hover:text-white hover:border transition-colors`}
+          className={`flex  justify-evenly text-start gap-3 ease-in-out delay-[0.2s] mb-1 border bg-white rounded-lg pr-2 text-metal hover:bg-metal hover:text-white hover:border transition-colors`}
         >
           <div
             className={`col-span-${
-              limit ? "4" : "2"
-            } flex p-2 rounded-md justify-center items-center gap-2`}
+              limit ? "2" : "2"
+            } flex min-w-[20%] p-2 rounded-md justify-center items-center gap-2`}
           >
             {item.type === "expense" ? (
               <GiExpense className="text-red-500" />
@@ -61,8 +61,8 @@ const ExpenseTable = ({ transactions, limit }) => {
           {/* name */}
           <div
             className={`col-span-${
-              limit ? "4" : "2"
-            } flex justify-start gap-2 items-center cursor-pointer`}
+              limit ? "2" : "2"
+            }  min-w-[20%] flex justify-start gap-2 items-center cursor-pointer`}
           >
             {editingIndex === index ? (
               <input
@@ -78,7 +78,7 @@ const ExpenseTable = ({ transactions, limit }) => {
           {/* description */}
           {!limit && (
             <div
-              className={`col-span-4 flex justify-start items-center cursor-pointer`}
+              className={`min-w-[40%] flex justify-start items-center cursor-pointer`}
             >
               {editingIndex === index ? (
                 <input
@@ -94,7 +94,7 @@ const ExpenseTable = ({ transactions, limit }) => {
           )}
           {/* price */}
           <div
-            className={`col-span-${limit ? "2" : "1"} flex w-full justify-end items-center`}
+            className={`col-span-${limit ? "2" : "2"} min-w-[10%] flex w-full justify-start items-center`}
           >
             {editingIndex === index ? (
               <input
@@ -111,7 +111,7 @@ const ExpenseTable = ({ transactions, limit }) => {
           </div>
 {/* edit section */}
       {!limit && (    <div
-            className={`col-span-${limit ? "3" : "2"} flex justify-end text-start gap-4 items-center`}
+            className={`col-span-${limit ? "2" : "2"} min-w-[10%] flex justify-start text-start gap-4 items-center`}
           >
             {editingIndex === index ? (
               <>

@@ -26,18 +26,19 @@ const Sidebar = () => {
           <motion.div
             initial="hidden"
             animate="visible"
+            
             transition={{ duration: 0.5, staggerChildren: 0.2 }}
           >
-            <motion.div variants={navItemVariants}>
+            <motion.div variants={navItemVariants}  whileTap={{ scale: 0.9 }}>
               <NavLink
                 className="flex w-[150px] rounded-md p-2 mb-2 justify-start items-center pl-2 pr-2 gap-1"
                 to="/dashboard"
               >
                 <MdDashboard /> Dashboard
               </NavLink>
-            </motion.div>
+            </motion.div >
             {/* Add more nav items here */}
-              <motion.div variants={navItemVariants}>
+              <motion.div variants={navItemVariants} whileTap={{ scale: 0.9 }}>
               <NavLink
                 className="flex w-[150px] rounded-md p-2 justify-start items-center pl-2 mb-2 pr-2 gap-1"
                 to="/all-Expenses"
@@ -45,7 +46,7 @@ const Sidebar = () => {
                 <IoList/> All Expenses
               </NavLink>
             </motion.div>
-            <motion.div variants={navItemVariants}>
+            <motion.div variants={navItemVariants} whileTap={{ scale: 0.9 }}>
               <NavLink
                 className="flex w-[150px] mb-2  rounded-md p-2 justify-start items-center pl-2 pr-2 gap-1"
                 to="/add-expense"
@@ -53,7 +54,7 @@ const Sidebar = () => {
                 <IoMdAddCircle /> Add Expense
               </NavLink>
             </motion.div>
-            <motion.div variants={navItemVariants}>
+            <motion.div variants={navItemVariants} whileTap={{ scale: 0.9 }}>
               <NavLink
                 to="/report"
                 className="flex w-[150px] rounded-md  mb-2  p-2 justify-start items-center pl-2 pr-2 gap-1"
@@ -61,7 +62,7 @@ const Sidebar = () => {
                 <TbReportAnalytics /> Report
               </NavLink>
             </motion.div>
-            <motion.div variants={navItemVariants}>
+            <motion.div variants={navItemVariants} whileTap={{ scale: 0.9 }}>
               <NavLink
                 className="flex w-[150px] rounded-md p-2 justify-start items-center pl-2 pr-2 gap-1"
                 to="/leaderboard"

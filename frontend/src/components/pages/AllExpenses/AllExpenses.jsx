@@ -83,7 +83,7 @@ const AllExpenses = () => {
         </Button>
       </div>
       
-      <motion.div initial={{ x: 100 }} animate={{ x: 0 }} className="w-full h-[80vh]">
+      <motion.div initial={{ x: 100 }} animate={{ x: 0 }} className="w-[100%] h-[80vh]">
         <ExpenseTable transactions={paginatedTransactions} />
       </motion.div>
       

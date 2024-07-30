@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = ({ setShowLogin }) => {
   let token=false
   return (
-    <div className="h-[10vh] w-full flex justify-between items-center max-sm:mb-0 bg-metal text-white ">
+    <div className="h-[10vh] w-full flex justify-between  items-center max-sm:mb-0 bg-metal text-white ">
     <div className="  ml-[5vw]">
               <h3 className=" flex text-3xl uppercase font-marcellus text-shadow-lg  text-white"><GiTakeMyMoney />Hisabi</h3>
     </div>

@@ -24,7 +24,8 @@ export default {
 
       },
       fontFamily: {
-        marcellus: ['Marcellus', 'serif'], // Add custom font family
+        marcellus: ['Marcellus', 'serif'],
+        Rubik: ['Rubik', 'sans-serif'], // Add custom font family
       },
       boxShadow: {
         'custom': 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px',

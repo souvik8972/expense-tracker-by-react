@@ -10,6 +10,12 @@ const transactions = [
   { name: 'Groceries', type: 'expense', description: 'Weekly groceries', price: 150, date: '2024-01-12' },
   { name: 'Consulting', type: 'income', description: 'Freelance consulting', price: 800, date: '2024-02-15' },
   { name: 'Utilities', type: 'expense', description: 'Monthly utilities', price: 200, date: '2024-02-20' },
+  { name: 'Rent', type: 'expense', description: 'Monthly rent payment', price: 1200, date: '2024-06-05' },
+  { name: 'Salary', type: 'income', description: 'Monthly salary', price: 3000, date: '2024-09-10' },
+  { name: 'Groceries', type: 'expense', description: 'Weekly groceries', price: 150, date: '2024-01-12' },
+  { name: 'Consulting', type: 'income', description: 'Freelance consulting', price: 800, date: '2024-10-15' },
+  { name: 'Utilities', type: 'expense', description: 'Monthly utilities', price: 200, date: '2024-02-20' },
+  
   // More transactions...
 ];
 
